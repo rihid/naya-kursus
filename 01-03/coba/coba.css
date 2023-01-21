@@ -1,0 +1,13 @@
+.kotak {
+    display: flex;
+    justify-content: center;
+}
+.kotak div {
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    background-color: aqua;
+}
+.kotak .h {
+    background-color: yellow;
+}

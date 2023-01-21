@@ -1,0 +1,186 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body{
+   font-family: Verdana, Geneva, sans-serif;
+   font-size: 18px;
+   background-color: #f2f2f2;
+}
+
+/* Navbar */
+
+nav{
+   position: sticky;
+   text-align: center;
+}
+
+ul{
+   list-style-type: none;
+   margin: 0;
+   padding: 0;
+   overflow: hidden;
+   background-color: #333;
+}
+ 
+li{
+   display: inline-block;
+   padding: 5px;
+   margin: 10px;
+}
+ 
+li a{
+   color: white;
+   padding: 14px 16px;
+   text-decoration: none;
+}
+ 
+li a:hover{
+   background-color: #111;
+}
+
+/* Hero */
+
+#main{
+   justify-content: center;
+   position: relative;
+   align-items: center;
+}
+
+.hero{
+   position: relative;
+}
+
+.hero::after{
+   content: '';
+   position: absolute;
+   display: block;
+   bottom: 0;
+   width: 100%;
+   height: 100%;
+   background-image: linear-gradient(to top, rgba(0,0,0,1), rgba(0,0,0,0));
+}
+
+.text{
+   position: absolute;
+   top: 10%;
+   left: 10%;
+   color: white;
+   z-index: 1;
+}
+
+#judul{
+   font-family: 'Kaushan Script', cursive;
+   font-size: 4em;
+   margin-bottom: 5px;
+   text-shadow: 0.1px 0.5px 3px black;
+}
+
+span{
+   color: #6BCB77;
+}
+
+#image{
+   display: block;
+   width: 100%;
+   height: auto;
+}
+
+/* Biografi */
+
+
+.subjudul{
+   margin: 40px 0;
+   font-family: 'Kaushan Script', cursive;
+   font-size: 2.5em;
+   color: #6BCB77;
+   text-align: center;
+}
+
+#tribute-info{
+   padding: 0 40px 40px 40px;
+   margin: 0 auto 30px auto;
+   text-align: left;
+   line-height: 1.6;
+}
+
+/* Quotes */
+
+#quotes{
+   position: relative;
+   background-color: #61b15a;
+
+}
+
+blockquote{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   position: relative;
+   width: 90%;
+   margin: auto;
+   padding: 35px 0;
+   font-size: 900px;
+   font-weight: 400;
+   color:#fff76a;
+}
+
+blockquote p{
+   font-size: 3rem;
+   line-height-step: 1.5rem;
+   text-align: center;
+   font-style: italic;
+}
+
+strong{
+   color: #ffce89;
+}
+
+cite{
+   margin-top: 20px;
+   font-family: 'Kaushan Script', cursive;
+   text-align: center;
+   font-size: 2rem;
+   font-style: normal;
+   line-height: 1.5;
+   color: #adce74;
+   text-shadow: 0.1px 0.5px 3px grey;
+}
+
+/* Penghargaan */
+
+table{
+   max-width: 1200px;
+   margin: 0 auto 50px auto;
+   border-collapse: collapse;
+   width: 100%;
+}
+ 
+th, td{
+   text-align: left;
+   padding: 8px;
+}
+ 
+tr:nth-child(even){background-color: #f2f2f2}
+ 
+th{
+   background-color: #61b15a;
+   color: white;
+}
+
+/* Footer */
+
+footer{
+   display: flex;
+   justify-content: space-around;
+   border-top: 1px solid rgba(232, 232, 232, 0.5);
+   background-color: #fff;
+}
+
+footer p{
+   margin: 15px 0px;
+   color: #5f5f5f;
+   font-size: 0.9rem;
+}
