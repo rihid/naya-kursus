@@ -9,8 +9,13 @@ html{
     font-family:'Arimo', sans-serif;
 }
 
+header{
+    display: inline;
+}
+
 nav{
     position: sticky;
+    top: 0;
     display: flex;
     justify-content: space-between;
     padding: 0.5% 6%;
@@ -57,7 +62,7 @@ nav a, .nav-links ul li a{
     background-size: cover;
     background-position: center;
     position: relative;
-    z-index: 1;
+    z-index: -1;
 }
 
 .hero::after{
@@ -69,7 +74,7 @@ nav a, .nav-links ul li a{
     width: 100%;
     background-color: black;
     opacity: 0.6;
-    z-index: -1;
+    z-index: -2;
 }
 
 
