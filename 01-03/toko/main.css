@@ -11,6 +11,8 @@ html{
 
 header{
     display: inline;
+    position: relative;
+    z-index: 2;
 }
 
 nav{
@@ -62,7 +64,7 @@ nav a, .nav-links ul li a{
     background-size: cover;
     background-position: center;
     position: relative;
-    z-index: -1;
+    z-index: 1;
 }
 
 .hero::after{
@@ -74,7 +76,7 @@ nav a, .nav-links ul li a{
     width: 100%;
     background-color: black;
     opacity: 0.6;
-    z-index: -2;
+    z-index: -1;
 }
 
 
