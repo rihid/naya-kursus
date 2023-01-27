@@ -80,11 +80,6 @@ body{
     /* text-shadow: 1px 1px 5px rgba(1, 1, 3, 0.5); */
 }
 
-.hero .content h1 span{
-    /* color: var(--primary); */
-
-}
-
 .hero .content p{
     margin-top: 1rem;
     color: #fff;
@@ -99,7 +94,7 @@ body{
 .about{
     padding: 1.4rem 7%;
 }
-.about h2, .service h2, .portofolio h2, .blog h2{
+.about h2, .service h2, .portofolio h2, .blog h2, .contact h2{
     text-align: center;
     font-size: 2.4rem;
     margin-bottom: 2.5rem;
@@ -146,6 +141,8 @@ body{
     box-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
 }
 
+/* Service Section */
+
 .service .service-container{
     display: flex;
     justify-content: space-between;
@@ -161,29 +158,21 @@ body{
 
 }
 
-.service-card span{
+.service-card img{
     margin: 2rem;
     display: block;
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size: 1.4rem;
+    width: 4rem;
 
 }
 
-.service-card h3{
-    display: block;
+.service-card .wrap{
     margin: -1rem 2rem 2rem 2rem;
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 1.4rem;
 
 }
 
-.service-card p{
-    display: block;
-    margin: -1rem 2rem 2rem 2rem;
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size: 1.4rem;
-
-}
+/* Portofolio */
 
 .portofolio .porto-container{
     display: flex;
@@ -200,6 +189,143 @@ body{
     flex-direction: column;
     font-family: 'Source Sans Pro',
 }
+
+.porto-card{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1.4rem;
+    margin: 0 1rem;
+    border: 1px solid #dee2e6;
+    border-radius: 0.25rem;
+
+}
+
+.porto-card .project-content{
+    padding: 2rem;
+}
+
+/* Blog Session */
+
+
+.blog .blog-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.4rem 7%;
+    
+}
+
+
+.blog .blog-container .blog-card{
+    margin: 0 1rem;
+    border: 1px solid #dee2e6;
+    border-radius: 0.25rem;
+
+}
+
+.blog-card .content{
+    margin: 2rem 1rem;
+    border-radius: 0.25rem;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1.4rem;
+}
+
+.blog-card a img {
+    display: block;
+    width: 28rem;
+    height: 14rem;
+    object-fit: cover;
+    object-position: center;
+}
+
+.blog-card .content h3{
+    margin: 0 0 1rem 0;
+}
+
+.blog-card .content h3 a{
+    color: black;
+}
+
+.blog-card .content .blog-icon span{
+    margin-right: 1.5rem;
+}
+
+.blog-card .content .blog-icon span i{
+    margin-right: 0.5rem;
+}
+
+.blog-card .content .blog-icon{
+    margin: 0 0 1rem 0;
+}
+
+.blog .btn{
+    display: flex;
+    justify-content: center;
+}
+
+.blog .btn a{
+    margin-top: 1rem;
+    display: inline-block;
+    justify-content: center;
+    padding: 0.75rem 3rem;
+    font-size: 1.4rem;
+    color: #fff;
+    background-color: #3C79F5;
+    border-radius: 0.5rem;
+    box-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
+}
+
+
+/* Contact Section */
+
+
+.contact .contact-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.4rem 7%;
+    
+}
+
+.contact .contact-container .contact-card{
+    display: flex;
+    justify-content: space-between;
+    margin: 0rem 1rem;
+}
+
+.contact-card .icon{
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+}
+
+.contact-card .wrap{
+    border-radius: 0.25rem;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1.4rem;
+}
+
+/* Footer */
+
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 4rem;
+    padding: 0.5rem 7%;
+    border-top: 1px solid #dee2e6;
+    background-color: #fff;
+    font-size: 1.4rem;
+ }
+ 
+ footer p, footer .social{
+    margin: 1rem 0;
+    color: #5f5f5f;
+ }
+
+ footer .social a{
+    color: #5f5f5f;
+ }
+ 
+
 
 
 
