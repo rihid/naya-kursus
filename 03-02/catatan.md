@@ -9,3 +9,5 @@ var, let, const.
 var = bisa digunakan untuk memberi nama yang sama lebih dari satu variabel, dan nilainya bisa diupdate berapa kali pun
 let = tidak bisa digunakan untuk memberi nama yang sama lebih dari satu variabel, dan nilainya bisa diupdate berapa kali pun
 const = tidak bisa digunakan untuk memberi nama yang sama lebih dari satu variabel, dan nilainya tidak bisa diupdate
+
+Hoisting = apa yang dibuat di bawah bisa digunakan di atas (dalam js) hoisting pada js ada pada var dan function
