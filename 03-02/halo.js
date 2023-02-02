@@ -22,5 +22,3 @@ const greeting = 'I\'m ' + nama + ' and i\'m ' + umur + ' yrs old.';
 
 console.log(`Halo nama saya adalah ${nama} dan umur saya adalah ${umur} tahun`);
 console.log(greeting);
-
-
