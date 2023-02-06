@@ -5,10 +5,10 @@ const tinggi = 3;
 const sisiLain = 2;
 
 const luasSegitiga = 0.5 * alas * tinggi;
-console.log(luasSegitiga);
+console.log('Luas Segitiga = ', luasSegitiga);
 // Rumus  Keliling Segitiga
 const kelilingSegitiga = alas + tinggi + sisiLain;
-console.log(kelilingSegitiga);
+console.log('Keliling Segitiga = ', kelilingSegitiga);
 
 // -----------------------------------------------------------------------------------
 // Rumus Luas Persegi Panjang
@@ -17,10 +17,10 @@ const panjang = 5;
 const lebar = 3;
 
 const luasPersegi = panjang * lebar;
-console.log(luasPersegi);
+console.log('Luas Persegi Panjang = ', luasPersegi);
 // Rumus Keliling Persegi Panjang
 const kelilingPersegi = 2*panjang + 2*lebar;
-console.log(kelilingPersegi);
+console.log('Keliling Persegi Panjang = ', kelilingPersegi);
 
 // -----------------------------------------------------------------------------------
 // Rumus Luas Lingkaran
@@ -29,10 +29,10 @@ const phi = 3.14;
 const radius = 3;
 
 const luasLingkaran = phi * radius**2;
-console.log(luasLingkaran);
+console.log('Luas Lingkaran = ', luasLingkaran);
 // Keliling LIngkaran
 const kelilingLingkaran = 2 * phi * radius;
-console.log(kelilingLingkaran);
+console.log('Keliling Lingkaran = ', kelilingLingkaran);
 
 // ------------------------------------------------------------------------------------
 // Rumus Volume Balok
@@ -42,10 +42,10 @@ const lBalok = 4;
 const tBalok = 6;
 
 const volumeBalok = pBalok * lBalok * tBalok;
-console.log(volumeBalok);
+console.log('Volume Balok = ', volumeBalok);
 // Rumus Keliing balok
 const kelilingBalok = 4 * (pBalok + lBalok + tBalok);
-console.log(kelilingBalok);
+console.log('Keliling Balok = ', kelilingBalok);
 
 // ----------------------------------------------------------------------------------
 // Rumus Volume Tabung
@@ -54,7 +54,7 @@ const radiusTabung = 5
 const tinggiTabung = 10
 
 const volumeTabung = phi * (radiusTabung**2) * tinggiTabung;
-console.log(volumeTabung);
+console.log('Volume Tabung = ', volumeTabung);
 // Rumus Keliling Tabung
 const kelilingTabung = 2 * ((2 * radiusTabung) + tinggiTabung);
-console.log(kelilingTabung);
+console.log('Keliling Tabung = ', kelilingTabung);
