@@ -29,7 +29,7 @@ for(;x <= 10; x++){
 console.log('Angka ganjil juga, tapi pakai while');
 
 let y = -10
-while(y <= 9){
+while(y < 10){
     y++;
     if (y % 2 == 0){
         continue;
