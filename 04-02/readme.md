@@ -20,7 +20,7 @@ Algoritma yang baik adalah yang ada hasilnya, baru kemudian yang sesuai tujuan.
 
 ### for
 konsep penulisan sintaks = for (...;...;...){}
-pada kurung ada 3 element. element pertama untuk inisiasi variabel, element kedua untuk kondisi apakah perulangannya terpenuhi apa tidak, statement ketiga asignment.
+pada kurung ada 3 element. element pertama untuk inisiasi variabel, element kedua untuk kondisi apakah perulangannya terpenuhi apa tidak, statement ketiga asignment operator.
 
 break; = fungsinya untuk mengakriri kode dan langsung ke kode setelah kurung tutup kurang kurawal
 continue; = funsginya untuk mengakriri kode setelah kurung kurawal dan kembali ke atas lagi
@@ -48,7 +48,7 @@ console.log(++i)
 NaN (Not a Number) + disiapkan untuk number tapi yang tidak bisa dideskripsikan sebagai number
 
 perbedaan antara for dan while
-- For dibatasi dengan jelas dan numerik: Contoh = Isi Auarium 3 Ember
-- While jelas tetapi tidak kehitung berapa: Contoh= Isi Aquarium sampai penuh
+- For dibatasi dengan jelas dan numerik: Contoh = Isi Auarium 3 Ember // Perulangannya jelas range-nya sampai berapa dibatasi
+- While jelas tetapi tidak kehitung berapa: Contoh= Isi Aquarium sampai penuh // Kalau While ketika kondisinya terpenuhi maka akan terpenuhi.
 
 #### Latihan!
