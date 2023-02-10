@@ -33,4 +33,4 @@ Return = Memberi nila ketika fungsi dipanggil. Fungsi akan puny anilai ketika di
 return pada Js hanya bisa satu.
 Return ketika sudah dibuat akan melempar nilai ke fungsi danlangung menyetop fungis ke kurung kurawal penutup dan lanjut ke baris beikutnya.
 
-![Gambar]('')
+![Gambar]('C:\Users\Rizal-Hidz\Pictures\Screenshots\Screenshoot (185).png')
