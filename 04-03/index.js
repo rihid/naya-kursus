@@ -100,7 +100,7 @@ function ganjil(angka){
     return angka % 2 != 0;
 }
 
-function angkaGenap(){
+function angkaGanjil(){
     for(let i = -10;i <= 10; i++){
         if(ganjil(i)){
             console.log(i);
@@ -108,5 +108,5 @@ function angkaGenap(){
     }
 }
 
-angkaGenap();
+angkaGanjil();
 
