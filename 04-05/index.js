@@ -1,4 +1,6 @@
 
+
+
 const penilaian = (nilai) => {
     if (nilai >= 80){
         return "A";
@@ -36,9 +38,7 @@ const angkaGenap = () => {
 angkaGenap();
 
 // Angka Ganjil
-const ganjil = (angka) => {
-    return angka % 2 != 0;
-}
+const ganjil = angka => angka % 2 != 0;
 
 const angkaGanjil = () => {
     for(let i = -10;i <= 10; i++){
@@ -50,19 +50,15 @@ const angkaGanjil = () => {
 
 angkaGanjil();
 
-// Luas Persegi
 
-const rumusLuas = (p, l, cb) => {
-    return cb(p * l);
-    
-}
+// Volume Balok
 
-const luasPersegi = rumusLuas(2, 2, (hasil) => {
-    console.log('Luas Persegi Adalah ' + hasil);
-    return hasil;
-});
+const volumeBalok = (p, l, t, cb) => cb(p * l * t);
 
-console.log(luasPersegi);
+const tampil = (rumus) => console.log("Hasil ", rumus);
+
+volumeBalok(1,3,3, tampil);
+
 
 
 
