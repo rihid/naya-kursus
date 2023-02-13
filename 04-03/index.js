@@ -14,8 +14,8 @@ console.log(luasLingkaran(2));
 // Rumus Bangun Ruang
 
 function volumeBalok(p, l, t){
-    let rumusVolume = p * l * t;
-    return rumusVolume;
+    return p * l * t;
+    
 }
 
 console.log(volumeBalok(1,3,3));
@@ -24,23 +24,23 @@ console.log(volumeBalok(1,3,3));
 
 function perbandinganAngka(angka1, angka2){
     if(angka1 > angka2){
-        return ('Angka Pertama Lebih Besar');
+        return 'Angka Pertama Lebih Besar';
     }
     else if(angka1 < angka2){
-        return ('Angka Kedua Lebih Besar');
+        return 'Angka Kedua Lebih Besar';
     }
     else if(angka1 == angka2){
-        return ('Angka Sama');
+        return 'Angka Sama';
     }
     else{
-        return ('Inputan Salah');
+        return 'Inputan Salah';
     }
 }
 
 console.log(perbandinganAngka(1, 2));
 
 // Rata-Rata.
-
+/*
 function penjumlahan(a, b, c){
     return a + b + c;
 }
@@ -51,7 +51,7 @@ function rataRata(){
 }
 
 console.log(rataRata());
-
+*/
 
 // Tugas menulis if dan for dengan function
 
@@ -90,7 +90,7 @@ function angkaGenap(){
         if(genap(i)){
             console.log(i);
         }
-    }
+    }       
 }
 
 angkaGenap();
