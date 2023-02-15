@@ -2,7 +2,7 @@
 
 
 const penilaian = (nilai) => {
-    if (nilai >= 80){
+    if (nilai >= 80 && nilai <=100){
         return "A";
     }
     else if (nilai >= 60 && nilai < 80){
@@ -14,12 +14,13 @@ const penilaian = (nilai) => {
     else if (nilai >= 1 && nilai < 40){
         return "D";
     }
+    // menambag\hakan kondisi kalau nilainya gak mask akal
     else{
         return "E";
     }
 }
 
-console.log( 'Ini nilainya: ' + penilaian(71));
+console.log( 'Ini nilainya: ' + penilaian(150));
 
 
 
@@ -55,7 +56,7 @@ angkaGanjil();
 
 const volumeBalok = (p, l, t, cb) => cb(p * l * t);
 
-const tampil = (rumus) => console.log("Hasil ", rumus);
+const tampil = rumus => console.log("Hasil ", rumus);
 
 volumeBalok(1,3,3, tampil);
 
