@@ -1,7 +1,7 @@
 // Mengecek punya key itu apa tidak
 const buah = {nama : 'jeruk', spesies : 'Sinesis', famili : 'Rutaceae', genus : 'Citrus', kelas : 'Magnoliosida',}
 
-function cekKey(obj, key){
+let cekKey = (obj, key) => {
     if(obj[key]){
         return 'Ada'
     }
