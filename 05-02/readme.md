@@ -65,7 +65,7 @@ Sama dengan foreach, bedanya map akan mereturn array baru yang panjangnya sama e
 
 * reduce
 
-method ini meretur 4 parameter, pertama accumulator (nilai terakhir dari proses reduce), kedua element array, ketiga indeksnya, keempat semuanya.
+method ini mereturn 4 parameter, pertama accumulator (nilai terakhir dari proses reduce), kedua element array, ketiga indeksnya, keempat semuanya.
 accumjlator berawal dari param kedua berupa 0 bisanaya dan bisa bertambah seiring nilai yan gdikembalikan dengan return
 
 Tambahan:
@@ -74,5 +74,5 @@ dalam konsep variabel, data harus ada dahulu baru bisa disimpan dalam variabel, 
 
 Tugas
 
-Buat array dan lakukan semua operasinya. Array string
+Buat array dan lakukan semua operasinya. Array string shift, unshift, pop, push, splice, map reduce.
 
