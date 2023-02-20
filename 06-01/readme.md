@@ -45,17 +45,21 @@ console.log(motor)
 
 
 #### Setter
-Nerima parameter kemudian parameter ditaruh dalam property
+Menerima parameter kemudian parameter ditaruh dalam property
 
 #### Getter
 untuk mereturn property
 
 #### Constructor
-method biasa yang namaya harus constructor. method ini jalan ketika object dibuat.
+method biasa yang namanya harus constructor. method ini jalan ketika object dibuat.
 
 #### Inheritence
 
 Pewarisan. Apabila kita membuat class baru dan diekstend maka akan mewarisi isi dari kelas yang diatasnya/ parentnya.
+
+### This keyword
+
+Menunjukan...
 
 ### Tambahan
 

@@ -111,7 +111,7 @@ class Lingkaran extends BangunDatar{
     }
     
     getKeliling(){
-        return 2 * this.phi() * this.getRadius();
+        return this.phi() * this.sisi;
     }
 }
 
