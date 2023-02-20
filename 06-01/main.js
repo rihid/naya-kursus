@@ -26,40 +26,41 @@ console.log(motor)
 // Tugas  
 
 class Segitiga{
-    alas;
-    tinggi;
-    sisiMiring;
+    // Constuctor
+    constructor(alas, tinggi, sisiMiring){
+        this.alas = alas;
+        this.tinggi = tinggi;
+        this.sisiMiring = sisiMiring;
+    }
 
-    luasSegitiga(){
+    getLuas(){
         return this.alas * this.tinggi;
     }
-    kelilingSegitiga(){
+    getKeliling(){
         return this.alas + this.tinggi + this.sisiMiring;
     }
 }
 
 class Persegi{
-    panjang;
-    lebar;
+    constructor(panjang, lebar){
+        this.panjang = panjang;
+        this.lebar = lebar;
+    }
 
-    luasPersegi(){
+    getLuas(){
         return this.panjang * this.lebar;
     }
-    kelilingPersegi(){
+    getKeliling(){
         return 2 * (this.panjang + this.lebar);
     }
 }
 
-const rumusSegitiga = new Segitiga;
-rumusSegitiga.alas = 5;
-rumusSegitiga.tinggi = 2;
-rumusSegitiga.sisiMiring = 4;
 
-const rumusPersegi = new Persegi;
-rumusPersegi.panjang = 4;
-rumusPersegi.lebar = 2;
 
-console.log(rumusSegitiga.luasSegitiga())
-console.log(rumusSegitiga.kelilingSegitiga())
-console.log(rumusPersegi.luasPersegi())
-console.log(rumusPersegi.kelilingPersegi())
+const rumusSegitiga = new Segitiga(2, 3, 4);
+const rumusPersegi = new Persegi(2, 2);
+
+console.log('Luas Segitiga ' + rumusSegitiga.getLuas())
+console.log('Keliling Segitiga ' + rumusSegitiga.getKeliling())
+console.log('Luas Persegi ' + rumusPersegi.getLuas())
+console.log('Keliling Persegi ' + rumusPersegi.getKeliling())

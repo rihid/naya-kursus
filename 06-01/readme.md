@@ -44,7 +44,17 @@ motor.spion = 2;
 console.log(motor)
 
 
+#### Setter
+Nerima parameter kemudian parameter ditaruh dalam property
+
+#### Getter
+untuk mereturn property
+
+#### Constructor
+method biasa yang namaya harus constructor. method ini jalan ketika object dibuat.
+
 ### Tambahan
 
-Dalam JS, Object ada dua macam, object dalam struktur data dan OBject dalam OOP.
-Property dalam OOP = Variabel yang dimasukkan dalam class/apa yang dimiliki class.
+- Dalam JS, Object ada dua macam, object dalam struktur data dan OBject dalam OOP.
+- Property dalam OOP = Variabel yang dimasukkan dalam class/apa yang dimiliki class.
+- Ketika new keyword dibuat untuk object, maka sebenarnya ada dua aksi yang dijalankan JS, yaitu menjalankan COnstruktor dan membuat object.
