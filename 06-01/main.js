@@ -24,7 +24,7 @@ console.log(motor)
 
 
 // Tugas  
-
+/*
 class Segitiga{
     // Constuctor
     constructor(alas, tinggi, sisiMiring){
@@ -54,13 +54,76 @@ class Persegi{
         return 2 * (this.panjang + this.lebar);
     }
 }
+*/
+// Inheritence
+
+class BangunDatar{
+    constructor(sisi){
+        this.sisi = sisi;
+    }
+
+    getRadius(){
+        return this.sisi / 2;
+    }
+}
 
 
+class Persegi extends BangunDatar{
+    constructor(sisi, lebar){
+        super(sisi);
+        this.lebar = lebar;
+    }
 
+    getLuas(){
+        return this.sisi  * this.lebar;
+    }
+
+    getKeliling(){
+        return 2 * (this.sisi + this.lebar);
+    }
+}
+
+
+class Segitiga extends BangunDatar{
+    constructor(sisi, tinggi, sisiMiring){
+        super(sisi);
+        this.tinggi = tinggi;
+        this.sisiMiring = sisiMiring;
+    }
+
+    getLuas(){
+        return (this.sisi / 2) * this.tinggi;
+    }
+    
+    getKeliling(){
+        return this.sisi + this.tinggi + this.sisiMiring;
+    }
+}
+
+class Lingkaran extends BangunDatar{
+    constructor(sisi){
+        super(sisi);
+        this.phi = () => 22 / 7;
+    }
+
+    getLuas(){
+        return this.phi() * (this.getRadius()**2);
+    }
+    
+    getKeliling(){
+        return 2 * this.phi() * this.getRadius();
+    }
+}
+
+
+const rumusPersegi = new Persegi(2, 3);
 const rumusSegitiga = new Segitiga(2, 3, 4);
-const rumusPersegi = new Persegi(2, 2);
+const rumusLingkaran = new Lingkaran(5);
 
 console.log('Luas Segitiga ' + rumusSegitiga.getLuas())
 console.log('Keliling Segitiga ' + rumusSegitiga.getKeliling())
 console.log('Luas Persegi ' + rumusPersegi.getLuas())
 console.log('Keliling Persegi ' + rumusPersegi.getKeliling())
+console.log('Luas Lingkaran ' + rumusLingkaran.getLuas())
+console.log('Keliling Lingkaran ' + rumusLingkaran.getKeliling())
+

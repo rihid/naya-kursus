@@ -53,6 +53,10 @@ untuk mereturn property
 #### Constructor
 method biasa yang namaya harus constructor. method ini jalan ketika object dibuat.
 
+#### Inheritence
+
+Pewarisan. Apabila kita membuat class baru dan diekstend maka akan mewarisi isi dari kelas yang diatasnya/ parentnya.
+
 ### Tambahan
 
 - Dalam JS, Object ada dua macam, object dalam struktur data dan OBject dalam OOP.
