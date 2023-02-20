@@ -162,3 +162,6 @@ Bisa menggunakan spread opertor juga
   3 //   "z": 20,
   2 // }
   1 // Tampilkan penjumlahan dari angka yang ada
+
+* Truthy dan Falsy si dini referensinya:
+https://developer.mozilla.org/en-US/docs/Glossary/Truthy

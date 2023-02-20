@@ -20,9 +20,14 @@ const angka = {
     z : 20,
 }
 
+// let nama = Object.values(angka);
+// console.log(typeof nama[0])
+
+// const keys = Object.keys(angka);
+
  let sum = obj => {
     // if(){}
-    return Object.values(obj).filter(val => typeof val == 'number').reduce((acc, v) => (acc + v),0);
+    return Object.values(obj).filter(val => typeof val === 'number').reduce((acc, v) => (acc + v),0);
  }
   
   console.log(sum(angka));
