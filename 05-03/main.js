@@ -2,7 +2,7 @@
 const buah = {nama : 'jeruk', spesies : 'Sinesis', famili : 'Rutaceae', genus : 'Citrus', kelas : 'Magnoliosida',}
 
 let cekKey = (obj, key) => {
-    if(obj[key]){
+    if(key in obj){
         return 'Ada'
     }
     else{
@@ -10,7 +10,7 @@ let cekKey = (obj, key) => {
     }
 }
 // console.log(Object.keys(buah))
-console.log(cekKey(buah, 'spesies'));
+console.log(cekKey(buah, 'nama'));
 
 // Menghitung yang valuenya number
 
