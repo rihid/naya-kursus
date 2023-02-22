@@ -21,7 +21,7 @@ Error yang dibuat akan membuat program berhenti di mana error dianggil dengan th
 adalah cara membuat gerbagn di proses yang kemungkinan ada terdapat pilihan error, khususnya dari user. seperti prose login dlsb.
 
 ####  Try
-merupakan mencoba memasukkan proses yang sekiranya terdapat error (ad throw). Kalau ada trhow di dalam try makan akan ditangkap catch.
+merupakan mencoba memasukkan proses yang sekiranya terdapat error (ada throw). Kalau ada trhow di dalam try makan akan ditangkap catch.
 
 #### catch
 

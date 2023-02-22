@@ -8,7 +8,12 @@ function pembagian(x, y){
         err.name = PembagiError;
         throw err;
     }
-    else if(typeof x && y != 'number'){
+    else if(typeof x != 'number'){
+        const err = new Error();
+        err.name = InputError;
+        throw err;
+    }
+    else if(typeof y != 'number'){
         const err = new Error();
         err.name = InputError;
         throw err;
@@ -18,8 +23,10 @@ function pembagian(x, y){
     }
 }
 
+// console.log(pembagian(1, 0));
+
 try{
-    pembagian(1, 0);
+    pembagian(4, 1);
 }
 catch(err){
     if(err.name == PembagiError){
@@ -28,4 +35,10 @@ catch(err){
     if(err.name == InputError){
         console.log('Inputan harus angka')
     }
+}
+
+let num = [1, 2, 2]
+function squareSum(numbers){
+    return numbers.reduce((acc, v) => {acc**2 + v}, 0);
+  
 }
