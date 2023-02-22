@@ -19,20 +19,20 @@ Dalam OOP ada juga class. CLass ini untuk mendeskripsikan gunanya object untuk a
 
 sintaks pembuatan
 
-// Sintaks Pembuatan class
-class Kendaraan {
-    // Property
-    roda;
-    spion;
-    cc;
-    // Method : Fungsi yang dimasukkan dalam class.
-    // KEyword function bisa dihilangkan
-    nyala(){
-        console.log('nyala')
-    }
-}
-// Memanggil Class Object
-console.log(new Kendaraan())
+                // Sintaks Pembuatan class
+                class Kendaraan {
+                    // Property
+                    roda;
+                    spion;
+                    cc;
+                    // Method : Fungsi yang dimasukkan dalam class.
+                    // KEyword function bisa dihilangkan
+                    nyala(){
+                        console.log('nyala')
+                    }
+                }
+                // Memanggil Class Object
+                console.log(new Kendaraan())
 
 // Bisa juga memakai ini.
 const motor = new Kendaraan();
