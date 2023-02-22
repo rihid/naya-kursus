@@ -9,7 +9,6 @@ let cekKey = (obj, key) => {
         return 'Tidak ada'
     }
 }
-// console.log(Object.keys(buah))
 console.log(cekKey(buah, 'nama'));
 
 // Menghitung yang valuenya number
