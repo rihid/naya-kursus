@@ -34,14 +34,14 @@ sintaks pembuatan
                 // Memanggil Class Object
                 console.log(new Kendaraan())
 
-// Bisa juga memakai ini.
-const motor = new Kendaraan();
-// Memanipulasi Property dalam class
-motor.roda = 2;
-motor.cc = 150;
-motor.spion = 2;
+                // Bisa juga memakai ini.
+                const motor = new Kendaraan();
+                // Memanipulasi Property dalam class
+                motor.roda = 2;
+                motor.cc = 150;
+                motor.spion = 2;
 
-console.log(motor)
+                console.log(motor)
 
 
 #### Setter
