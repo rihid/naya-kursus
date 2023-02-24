@@ -24,6 +24,12 @@ ada yang namanya callback hell
 
 untuk membuat promise bisa menginisialisasi object dengan new PRomise(). Promise meminta du parameter resolve dan reject. Ketika ada proses yang diresolve promise, dia masuk then yang meminta callback dan nerima hasil dari promise. Reject konsepnya mirip throw error akan mengembalikan error. Reject akan diterima .catch
 
+.Then dan .cath bisa dipakai berkali-kali. artinya bukan hanya sekali. mereka akan mengambil hasil dari yang di atasnya. kemudian ada .finnally tidak pedui then atau catch dia akan tetap jalan.
+
+Promise.all() = mereturn semua promise dalam bentuk array. menjalankan semua hasil gagal semua
+Promise.race() = mereturn semua promise tapi akan menampilkan sahil yang paling cepat. menjalankan semua tapi yang peling cepat yang akan dipakai
+Promise.all() = menampilkan semua seperti all tetapi menampilkan valuenya, apakah fulfiled atau reject.
+
 ## ASync Await
 
 Promise dengan cara supaya menunggu resolve atau reject tidak perlu .then dan cath
