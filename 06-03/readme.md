@@ -28,7 +28,7 @@ untuk membuat promise bisa menginisialisasi object dengan new PRomise(). Promise
 
 Promise.all() = mereturn semua promise dalam bentuk array. menjalankan semua hasil gagal semua
 Promise.race() = mereturn semua promise tapi akan menampilkan sahil yang paling cepat. menjalankan semua tapi yang peling cepat yang akan dipakai
-Promise.all() = menampilkan semua seperti all tetapi menampilkan valuenya, apakah fulfiled atau reject.
+Promise.allSetled() = menampilkan semua seperti all tetapi menampilkan valuenya, apakah fulfiled atau reject.
 
 ## ASync Await
 
