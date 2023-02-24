@@ -1,4 +1,4 @@
-// FUngsi Pembagian
+// Fungsi Pembagian
 const PembagiError = 'PembagiError';
 const InputError = 'InputError'
 
@@ -37,8 +37,4 @@ catch(err){
     }
 }
 
-let num = [1, 2, 2]
-function squareSum(numbers){
-    return numbers.reduce((acc, v) => {acc**2 + v}, 0);
-  
-}
+
