@@ -27,6 +27,13 @@ let sum = document.getElementById('angka').innerText.split('\n').map(Number).red
 let hasil = document.getElementById('hasil');
 hasil.innerHTML = sum;
 
+// Console.table() Method
+let elem = document.getElementById('angka')
+.innerText.split('\n')
+.map((item) => parseInt(item, 10))
+
+console.table(elem);
+
 
 
 
