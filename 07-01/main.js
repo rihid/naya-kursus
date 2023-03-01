@@ -1,6 +1,5 @@
 // Cek element tertentu
 
-
 function cekElem(isi){
     let element = document.querySelectorAll(isi);
     if(element.length == 0){
@@ -9,7 +8,6 @@ function cekElem(isi){
         console.log(isi)
     }
 }
-
 
 try{
     cekElem(null);
@@ -33,6 +31,8 @@ let elem = document.getElementById('angka')
 .map((item) => parseInt(item, 10))
 
 console.table(elem);
+
+
 
 
 
