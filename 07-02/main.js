@@ -26,7 +26,7 @@ function dataTable() {
 let isi = dataTable();
 console.table(isi);
 
-// Tabel dari JS
+// Tugas Tabel dari JS
 
 let container = document.getElementsByClassName('container');
 let tbl = document.createElement('table');
