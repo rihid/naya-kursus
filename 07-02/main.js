@@ -33,7 +33,8 @@ let tbl = document.createElement('table');
 container[0].appendChild(tbl);
 tbl.id = 'tblcustom';
 
-
+let data = Object.keys(isi[0]); // Mengambil data Array of Object dari data tabel kemarin
+let tblCustom = document.getElementById("tblcustom");
 function tHead(table, data) {
     let thead = table.createTHead();
     let row = thead.insertRow();
@@ -44,6 +45,7 @@ function tHead(table, data) {
       row.appendChild(th);
     }
 }
+tHead(tblCustom, data);
 
 function tBody(table, obj) {
     let tbody = table.createTBody();
@@ -56,10 +58,6 @@ function tBody(table, obj) {
       }
     }
 }
-  
-let tblCustom = document.getElementById("tblcustom");
-let data = Object.keys(isi[0]);
-tHead(tblCustom, data);
 tBody(tblCustom, isi);
 
 
