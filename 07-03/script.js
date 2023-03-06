@@ -13,11 +13,7 @@ button.addEventListener( 'click', () => {
             clearInterval(interval);
         }else {
             let text = document.querySelector('span');
-            if(counter === 6){
-                text.innerHTML = '...';
-            }else{
-                text.innerHTML = counter;
-            }
+            (counter === 6) ? text.innerHTML = '...' : text.innerHTML = counter;
         }
         
     }, 1000)
