@@ -3,12 +3,10 @@ const api = axios.create({
 });
 
 api.get("posts/9")
-// .then( res => res.json())
-// .then( res => JSON.stringify(res))
 .then( res => {
-    $("h1").text(res.data.title);
-    $("p").text(res.data.body);
-})
+    $(".content > h1").text(res.data.title);
+    $(".content > p").text(res.data.body);
+});
 
 api.get("comments/post/9")
 .then( res => {
@@ -16,7 +14,7 @@ api.get("comments/post/9")
         const div = $(".comment");
         div.append(`
         <p>@${cmts.user.username}</p>
-        <p>${cmts.body}</p>
+        <p>${cmts.body.replace("good", "***")}</p>
         `);
     })
 })
