@@ -92,49 +92,34 @@
 	<!--Container-->
 	<div class="container w-full md:max-w-3xl mx-auto pt-10">
 
-		<div class="w-full px-4 md:px-6 text-xl text-gray-800 leading-normal">
+		<div class="w-full px-4 md:px-6 text-xl text-gray-800 leading-normal mb-10">
 			<!--Post Content-->
-            <div class="pt-8 lg:pt-12 posts-card" x-data="x" x-init="datas = await x.init()">
-				<template x-for="post in datas" :key="post.id">
-					<div class="border-b border-grey-lighter pb-4 pt-4">
-						<span
-							class="mb-4 inline-block rounded-full bg-green-light px-2 py-1 font-body text-sm text-green" x-text="post.tags">
-						</span>
-						<h1>
-							<a href="" class="block font-sans text-xl font-semibold text-primary transition-colors title" x-text="post.title"></a>
-						</h1>
-						
-						<p class="py-6 text-lg font-sans" x-text="post.body"></p>
-						
-						<div class="flex w-full items-center font-sans py-2">
-							<img class="w-10 h-10 rounded-full mr-4" src="http://i.pravatar.cc/300" alt="Avatar of Author">
-							<div class="flex-1 px-2">
-								<p class="text-base font-bold text-base md:text-xl leading-none mb-2" x-text="post.userId"></p>
-								<p class="text-gray-600 text-xs md:text-base">Lorem ipsum dolor sit amet.</p>
-							</div>
+            <div class="pt-8 lg:pt-12 posts-card">
+				
+					<div class=" pb-2 pt-2">
+						<label for="price" class="block text-lg font-medium leading-6 text-gray-900">Judul</label>
+						<div class="relative mt-2 rounded-md shadow-sm">
+						  <input type="text" name="price" id="price" class="block w-full rounded-md border-0 py-1.5 pl-7 pr-20 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" placeholder="Judul...">
 						</div>
-						
 					</div>
-				</template>
+				
+					<div class=" pb-2 pt-2">
+						<label for="price" class="block text-lg font-medium leading-6 text-gray-900">Tags</label>
+						<div class="relative mt-2 rounded-md shadow-sm">
+						  <input type="text" name="price" id="price" class="block w-full rounded-md border-0 py-1.5 pl-7 pr-20 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" placeholder="Judul...">
+						</div>
+					</div>
+				
+					<div class=" pb-2 pt-2">
+						<label for="price" class="block text-lg font-medium leading-6 text-gray-900">Isi</label>
+						<div class="relative mt-2 rounded-md shadow-sm">
+						  <textarea name="price" id="price" class="block w-full h-3/5 rounded-md border-0 py-1.5 pl-7 pr-20 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" placeholder="Judul..."></textarea>
+						</div>
+					</div>
+				
             </div>
 			<!--/ Post Content-->
-			<!--Next & Prev Links-->
-			<div class="font-sans flex justify-between content-center px-4 pb-12 mt-8">
-				<div class="text-left">
-					<span class="text-xs md:text-sm font-normal text-gray-600"><a href="#" class="break-normal text-indigo-400 md:text-sm text-green-500 font-bold no-underline hover:underline">&lt; Previous Post</a></span>
-				</div>
-				<template x-for="(page, index) in pages()" :key="index	">
-					<div class="text-center">
-						<span class="text-sm font-medium leading-none cursor-pointer text-gray-600 hover:text-indigo-700 border-t border-transparent hover:border-indigo-400 pt-1 mr-4 px-2" x-text="index + 1">1</span>
-						<span class="text-sm font-medium leading-none cursor-pointer text-indigo-700 border-t border-indigo-400 pt-1 mr-2 px-2" x-text="index + 1">2</span>
-					</div>
-				</template>
-				<div class="text-right">
-					<span class="text-xs md:text-sm font-normal text-gray-600"><a href="#" class="break-normal text-indigo-400 md:text-sm text-green-500 font-bold no-underline hover:underline">Next Post &gt;</a></span>
-			</div>
-			<!--/Next & Prev Links-->
 		</div>
-
 
 	</div>
 	<!--/container-->
