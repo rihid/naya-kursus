@@ -22,7 +22,7 @@ window.addEventListener('DOMContentLoaded', () => {
         }
         scrollPos = currentTop;
     });
-})
+});
 
 
 
@@ -40,19 +40,17 @@ let x = {
                 return res.data.posts;
             });
     }
-}
+};
 
-// Single Post
-
-let y = {
-    singleData: [],
-    init(){
-        return api.get("posts/9")
-            .then(res => {
-                return res.data;
-            });
-    }
-}
+// let y = {
+//     singleData: [],
+//     init(){
+//         return api.get("posts/9")
+//             .then(res => {
+//                 return res.data;
+//             });
+//     }
+// }
 // console.log(y)
 
 // Post Method
@@ -74,18 +72,44 @@ form.addEventListener('submit', function(e){
     })
     .catch(err => err)
         
-})
+});
+
+// Put Method
+
+function dataEdit(post){
+    $('.modal-body').append(`
+        <form id="update-form">
+            <div class="mb-3">
+            <label for="tags" class="form-label">Tags</label>
+            <input type="text" class="form-control" id="tags-update" name="tags" value="${post.tags}" />
+            </div>
+            <div class="mb-3">
+            <label for="title" class="form-label">Judul</label>
+            <input type="text" class="form-control" id="tags" name="title" value="${post.title}" />
+            </div>
+            <div class="mb-3">
+            <label for="body" class="form-label">Body</label>
+            <input type="text" class="form-control" id="body" name="body" value="${post.body}" />
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+        </form>   
+    `);
+};
 
 // Delete Method
 
-function delPost(){
-    api.delete('posts/1')
+function delPost(id){
+    api.delete(`posts/${id}`)
     .then(res => {
         if(res.data.isDeleted == true){
-            document.querySelector('#hapus').style = "block"
+            $('#posting').css('display', 'none')
+            // document.querySelector('#hapus').style = "block"
         }
+        console.log(res)
     })
-    // console.log('j')
 }
 
 
