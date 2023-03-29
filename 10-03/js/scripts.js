@@ -42,6 +42,41 @@ let x = {
     }
 };
 
+// Get Commen
+function showComments(id){
+    api.get(`comments/post/${id}`)
+    .then( res => {
+
+        res.data.comments.forEach( cmts => {
+            $(`#comments${id}`).append(`
+                <div class="card card-body border-bottom" id='comments${id}'>
+                    <h6 class="card-title">@${cmts.user.username}</h6>
+                    <p class="m-0">${cmts.body}</p>
+                </div>
+            `)
+            console.log(cmts)
+        })
+        
+    })
+}
+
+
+// function showComment(id){
+//     return {
+//         dataCmts : [],
+//         initData(){
+//             return api.get(`comments/post/${id}`)
+//                 .then(res => {
+//                     res.data.comments.forEach( cmts => {
+//                         console.log(cmts)
+//                     })
+//                 });
+//         }
+//     };
+// }
+
+
+
 // let y = {
 //     singleData: [],
 //     init(){
@@ -77,27 +112,14 @@ form.addEventListener('submit', function(e){
 // Put Method
 
 function dataEdit(post){
-    $('.modal-body').append(`
-        <form id="update-form">
-            <div class="mb-3">
-            <label for="tags" class="form-label">Tags</label>
-            <input type="text" class="form-control" id="tags-update" name="tags" value="${post.tags}" />
-            </div>
-            <div class="mb-3">
-            <label for="title" class="form-label">Judul</label>
-            <input type="text" class="form-control" id="tags" name="title" value="${post.title}" />
-            </div>
-            <div class="mb-3">
-            <label for="body" class="form-label">Body</label>
-            <input type="text" class="form-control" id="body" name="body" value="${post.body}" />
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                <button type="submit" class="btn btn-primary">Submit</button>
-            </div>
-        </form>   
-    `);
+    let tags = document.querySelector('#tags')
+    tags.setAttribute('value', `${post.tags}`)
+    console.log(tags)
 };
+function updateData(){
+    console.log('n')
+}
+
 
 // Delete Method
 
@@ -105,8 +127,9 @@ function delPost(id){
     api.delete(`posts/${id}`)
     .then(res => {
         if(res.data.isDeleted == true){
-            $('#posting').css('display', 'none')
-            // document.querySelector('#hapus').style = "block"
+            let content = $('#posting')
+            content.attr('id', `posting${id}`)
+            $(`#posting${id}`).css('display', 'none')
         }
         console.log(res)
     })
