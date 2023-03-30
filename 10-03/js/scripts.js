@@ -1,31 +1,4 @@
 
-window.addEventListener('DOMContentLoaded', () => {
-    let scrollPos = 0;
-    const mainNav = document.getElementById('mainNav');
-    const headerHeight = mainNav.clientHeight;
-    window.addEventListener('scroll', function() {
-        const currentTop = document.body.getBoundingClientRect().top * -1;
-        if ( currentTop < scrollPos) {
-            // Scrolling Up
-            if (currentTop > 0 && mainNav.classList.contains('is-fixed')) {
-                mainNav.classList.add('is-visible');
-            } else {
-                // console.log(123);
-                mainNav.classList.remove('is-visible', 'is-fixed');
-            }
-        } else {
-            // Scrolling Down
-            mainNav.classList.remove(['is-visible']);
-            if (currentTop > headerHeight && !mainNav.classList.contains('is-fixed')) {
-                mainNav.classList.add('is-fixed');
-            }
-        }
-        scrollPos = currentTop;
-    });
-});
-
-
-
 // Fetch Api
 const api = axios.create({
     baseURL: "https://dummyjson.com"
@@ -55,38 +28,11 @@ function showComments(id){
                 </div>
             `)
             console.log(cmts)
-        })
+        });
         
     })
+    .catch(err => err);
 }
-
-
-// function showComment(id){
-//     return {
-//         dataCmts : [],
-//         initData(){
-//             return api.get(`comments/post/${id}`)
-//                 .then(res => {
-//                     res.data.comments.forEach( cmts => {
-//                         console.log(cmts)
-//                     })
-//                 });
-//         }
-//     };
-// }
-
-
-
-// let y = {
-//     singleData: [],
-//     init(){
-//         return api.get("posts/9")
-//             .then(res => {
-//                 return res.data;
-//             });
-//     }
-// }
-// console.log(y)
 
 // Post Method
 
@@ -103,21 +49,37 @@ form.addEventListener('submit', function(e){
         }else{
             document.querySelector('#failed-info').style = "block";
         }
-        // console.log(res.status)
+        console.log(res)
     })
-    .catch(err => err)
+    .catch(err => err);
         
 });
 
 // Put Method
 
 function dataEdit(post){
-    let tags = document.querySelector('#tags')
-    tags.setAttribute('value', `${post.tags}`)
-    console.log(tags)
+    $('#tags').attr('value', `${post.tags}`)
+    $('#title').attr('value', `${post.title}`)
+    $('#body').text(`${post.body}`)
+    // console.log(tags)
 };
-function updateData(){
-    console.log('n')
+
+function updateData(id){
+    const form = document.querySelector('#update-form')
+    let formData = new FormData(form)
+    formData.append('userId', 9)
+
+    api.put(`posts/${id}`, formData)
+    .then(res => {
+        if(res.status == 200){
+            document.querySelector('#success-update').style = "block";
+        }else{
+            document.querySelector('#failed-update').style = "block";
+        }
+        console.log(res)
+    })
+    .catch(err => err);
+    
 }
 
 
@@ -133,6 +95,7 @@ function delPost(id){
         }
         console.log(res)
     })
+    .catch(err => err)
 }
 
 
