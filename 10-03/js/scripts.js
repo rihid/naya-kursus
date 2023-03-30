@@ -1,5 +1,7 @@
 
 // Fetch Api
+
+// Axios Config
 const api = axios.create({
     baseURL: "https://dummyjson.com"
 });
@@ -15,14 +17,20 @@ let x = {
     }
 };
 
-// Get Commen
+// Add Like
+
+function addLike(likes){
+    console.log(likes++)
+}
+
+// Get Comments
 function showComments(id){
     api.get(`comments/post/${id}`)
     .then( res => {
 
         res.data.comments.forEach( cmts => {
             $(`#comments${id}`).append(`
-                <div class="card card-body border-bottom" id='comments${id}'>
+                <div class="card card-body border-bottom mb-2" id='comments${id}'>
                     <h6 class="card-title">@${cmts.user.username}</h6>
                     <p class="m-0">${cmts.body}</p>
                 </div>
