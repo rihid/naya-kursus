@@ -18,9 +18,10 @@ let x = {
 };
 
 // Add Like
+function addLike(post){
+    $(`.add-like${post.id}`).text(post.reactions+1);
+    // console.log(post)
 
-function addLike(likes){
-    console.log(likes++)
 }
 
 // Get Comments
@@ -89,7 +90,6 @@ function updateData(id){
     .catch(err => err);
     
 }
-
 
 // Delete Method
 
