@@ -1,0 +1,1 @@
+Project Individu. folderini hanya percobaan, project selesai ada di folder 10-03
